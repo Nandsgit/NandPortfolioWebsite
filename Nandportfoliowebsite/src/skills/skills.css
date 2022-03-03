@@ -1,0 +1,153 @@
+.pagedim {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  /* background-color:sandybrown; */
+}
+.heading {
+  font-family: "Monoton", cursive;
+
+  /* color:black; */
+  font-size: 50px !important;
+}
+/* 
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .button5 {
+      border-radius: 50%;
+      background-color: #43be0a;
+
+
+}
+.button4 {
+    border-radius: 50%;
+    background-color: #1b44ca;
+}
+
+.button3 {
+    border-radius: 50%;
+    background-color: #d6cd4b;
+} */
+
+.line1::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  height: 60px;
+  width: 40%;
+  background: seashell;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 4s linear 0s;
+}
+
+@keyframes typing {
+  0% {
+    left: 45%;
+  }
+  100% {
+    left: 56%;
+  }
+}
+
+.get {
+  display: none;
+}
+
+#diagram {
+  float: right;
+  width: 500px;
+  height: 500px;
+}
+
+/* section > header {
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    color: #FC6D6D;
+  } */
+
+section .skill {
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .skill {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill .set {
+  /* background-color: #3feee6; */
+  background-color: black;
+
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.skill .set:hover {
+  box-shadow: 0px 12px 16px darksalmon;
+}
+
+.set span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 48px;
+  background-color: #55bcc9;
+  color: white;
+  border-radius: 35%;
+  margin-inline: auto;
+}
+
+.set > header {
+  padding-block: 24x;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.set .list {
+  padding-block: 8px;
+  display: grid;
+  grid-template-columns: 1fr 28px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.set:hover .list {
+  color: white;
+}
+
+.fediagram {
+  width: 50px;
+  height: 50px;
+}
+
+/* svg {
+    width: inherit;
+    height: inherit;
+   } */
