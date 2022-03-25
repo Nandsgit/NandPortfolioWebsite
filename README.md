@@ -1,4 +1,4 @@
-In-progress
+In-progress (60% done)
 
 # NandPortfolioWebsite
 
